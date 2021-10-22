@@ -6,6 +6,8 @@ namespace Module_7
     {
         static void Main(string[] args)
         {
+            InheritedClass b = new InheritedClass();
+
             Console.WriteLine("Hello World!");
         }
     }
