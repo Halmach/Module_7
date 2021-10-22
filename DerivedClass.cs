@@ -12,6 +12,11 @@ namespace Module_7
             this.Description = description;
         }
 
+        public override void Display()
+        {
+            Console.WriteLine("Метод класса DerivedClass");
+
+        }
         public DerivedClass(string name, string description, int counter):this(name,description)
         {
             Counter = counter;

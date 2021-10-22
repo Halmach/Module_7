@@ -15,6 +15,11 @@ namespace Module_7
 		//	this.value = 0;
 		//}
 
+		public virtual void Display()
+        {
+			Console.WriteLine("Метод класса BaseClass");
+        }
+
 		public BaseClass(string name)
 		{
 			this.Name = name;
