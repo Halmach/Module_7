@@ -8,8 +8,12 @@ namespace Module_7
     {
 		public string Name;
 		protected string Description;
-		private int value;
-
+		private int counter;
+		public virtual int Counter
+        {
+			get;
+			set;
+        }
 		//public BaseClass()
 		//{
 		//	this.value = 0;
@@ -30,7 +34,7 @@ namespace Module_7
 	{
 		private int newValue;
 
-		public InheritedClass() : base(100)
+		public InheritedClass() : base("")
 		{ }
 		public InheritedClass(int newValue) :base("Vasya")
 		{

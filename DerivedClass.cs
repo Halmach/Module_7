@@ -6,7 +6,13 @@ namespace Module_7
 {
     class DerivedClass : BaseClass
     {
-        public int Counter;
+        private int counter;
+
+        public override int Counter
+        {
+            get { return counter; }
+            set { if (value >= 0) counter = value; }
+        }
         public DerivedClass(string name,string description):base(name)
         {
             this.Description = description;
@@ -19,7 +25,7 @@ namespace Module_7
         }
         public DerivedClass(string name, string description, int counter):this(name,description)
         {
-            Counter = counter;
+            this.counter = counter;
             
         }
     }
