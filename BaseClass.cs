@@ -18,6 +18,10 @@ namespace Module_7
 		//{
 		//	this.value = 0;
 		//}
+		public BaseClass()
+        {
+			
+        }
 
 		public virtual void Display()
         {

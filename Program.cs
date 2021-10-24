@@ -6,9 +6,12 @@ namespace Module_7
     {
         static void Main(string[] args)
         {
-            InheritedClass b = new InheritedClass();
+            //InheritedClass b = new InheritedClass();
 
-            Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello World!");
+            BaseClass cl = new DerivedClass();
+            ((DerivedClass)cl).Display();
+
         }
     }
 
