@@ -10,7 +10,12 @@ namespace Module_7
 		private string owner;
 		private int length;
 		private int count;
+		public int Value;
 
+
+		public Obj()
+		{ 
+		}
 		public Obj(string name, string ownerName, int objLength, int count)
 		{
 			this.name = name;
@@ -18,5 +23,21 @@ namespace Module_7
 			length = objLength;
 			this.count = count;
 		}
+
+		public static Obj operator +(Obj a, Obj b)
+        {
+			return new Obj
+			{
+				Value = a.Value + b.Value
+			};
+        }
+
+		public static Obj operator -(Obj a,Obj b)
+        {
+			return new Obj
+			{
+				Value = a.Value - b.Value
+			};
+        }
 	}
 }
