@@ -7,6 +7,8 @@ namespace Module_7
     class Obj
     {
 		private string name;
+		public string Description;
+		public static int MaxValue = 2000;
 		private string owner;
 		private int length;
 		private int count;

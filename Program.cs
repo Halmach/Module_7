@@ -11,6 +11,7 @@ namespace Module_7
             //Console.WriteLine("Hello World!");
             BaseClass cl = new DerivedClass();
             ((DerivedClass)cl).Display();
+     
 
         }
     }
