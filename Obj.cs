@@ -8,12 +8,20 @@ namespace Module_7
     {
 		private string name;
 		public string Description;
-		public static int MaxValue = 2000;
+		public static int MaxValue;
+		public static string Parent;
+		public static int DaysInWeek;
 		private string owner;
 		private int length;
 		private int count;
 		public int Value;
 
+		static Obj()
+        {
+			MaxValue = 2000;
+			DaysInWeek = 7;
+			Parent = "System.Object";
+		}
 
 		public Obj()
 		{ 
