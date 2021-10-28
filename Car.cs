@@ -4,9 +4,14 @@ using System.Text;
 
 namespace Module_7
 {
-    class Car<T>
+    class Car<T1>
     {
-        T Engine;
+        public T1 Engine;
+
+        public virtual void ChangePart<T2>(T2 newPart)
+        {
+
+        }
 
     }
 
@@ -19,4 +24,21 @@ namespace Module_7
     {
 
     }
+
+    class Battery
+    {
+
+    }
+
+    class Differential
+    {
+
+    }
+
+    class Wheel
+    {
+
+    }
+
+
 }
