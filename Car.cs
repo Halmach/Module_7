@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Module_7
 {
-    class Car<T1> where T1: TypeEngine
+    class Car<TEngine> where TEngine: TypeEngine
     {
-        public T1 Engine;
+        public TEngine Engine;
 
-        public virtual void ChangePart<T2>(T2 newPart) where T2: CarComponent
+        public virtual void ChangePart<TPart>(TPart newPart) where TPart: CarComponent
         {
 
         }
