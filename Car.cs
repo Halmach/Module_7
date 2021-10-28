@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Module_7
 {
-    class Car<TEngine> where TEngine: TypeEngine
+    abstract class Car<TEngine> where TEngine: TypeEngine
     {
         public TEngine Engine;
 
@@ -13,6 +13,23 @@ namespace Module_7
 
         }
 
+    }
+
+
+    class ElectricCar:Car<ElectricEngine>
+    {
+        public override void ChangePart<TPart>(TPart newPart)
+        {
+            
+        }
+    }
+
+    class GasCar:Car<GasEngine>
+    {
+        public override void ChangePart<TPart>(TPart newPart)
+        {
+            
+        }
     }
 
 
