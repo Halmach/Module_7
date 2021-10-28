@@ -4,38 +4,48 @@ using System.Text;
 
 namespace Module_7
 {
-    class Car<T1>
+    class Car<T1> where T1: TypeEngine
     {
         public T1 Engine;
 
-        public virtual void ChangePart<T2>(T2 newPart)
+        public virtual void ChangePart<T2>(T2 newPart) where T2: CarComponent
         {
 
         }
 
     }
 
-    class ElectricEngine
+
+    abstract class TypeEngine
+    {
+
+    }
+    class ElectricEngine : TypeEngine
     {
 
     }
 
-    class GasEngine
+    class GasEngine : TypeEngine
     {
 
     }
 
-    class Battery
+    abstract class CarComponent
     {
 
     }
 
-    class Differential
+    class Battery : CarComponent
     {
 
     }
 
-    class Wheel
+    class Differential : CarComponent
+    {
+
+    }
+
+    class Wheel : CarComponent
     {
 
     }
